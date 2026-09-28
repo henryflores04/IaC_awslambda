@@ -49,12 +49,12 @@ curl.exe -X POST "https://xul9mowu41.execute-api.us-east-1.amazonaws.com/upload"
 
 ### Destrucción del entorno
 ## En cada entorno funcional se despliega terraform destroy 
-terraform destroy -var-file="environments/<entorno>.tfvars" 
-# Se cambia "<entorno>" por el respectivo 
+# terraform destroy -var-file="environments/'entorno'.tfvars" 
+Se cambia 'entorno' por el respectivo 
 
 
 ## Si se habilitaron los 3 despliegues entonces hacer primero 
-terraform workspace select <entorno>
-# Se cambia "<entorno>" por el respectivo 
+# terraform workspace select 'entorno'
+Se cambia 'entorno' por el respectivo 
 
 
