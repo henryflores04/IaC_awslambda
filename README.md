@@ -47,14 +47,14 @@ terraform apply -var-file="environments/prod.tfvars"
 
 curl.exe -X POST "https://xul9mowu41.execute-api.us-east-1.amazonaws.com/upload" -H "Content-Type: image/jpeg" --data-binary "Captura de pantalla 2026-09-28 090702.png"
 
-### Destrucción del entorno
+# Destrucción del entorno
 ## En cada entorno funcional se despliega terraform destroy 
-# terraform destroy -var-file="environments/'entorno'.tfvars" 
+### terraform destroy -var-file="environments/'entorno'.tfvars" 
 Se cambia 'entorno' por el respectivo 
 
 
-## Si se habilitaron los 3 despliegues entonces hacer primero 
-# terraform workspace select 'entorno'
+# Si se habilitaron los 3 despliegues entonces hacer primero 
+## terraform workspace select 'entorno'
 Se cambia 'entorno' por el respectivo 
 
 
